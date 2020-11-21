@@ -35,7 +35,7 @@ namespace hidden_tear_decrypter
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern Int32 SystemParametersInfo(UInt32 action, UInt32 uParam, String vParam, UInt32 winIni);
         string userName = Environment.UserName;
-        string userDir = "C:\\";
+        string userDir = "C:\\Users\\최고의 지식근로자\\Desktop\\";
         string backgroundImageUrl = "http://i.imgur.com/5Yuq9Qv.jpg"; //desktop background picture
         int decrypted;
 
@@ -143,7 +143,7 @@ namespace hidden_tear_decrypter
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string path_1 = "Users\\";
+            //string path_1 = "Users\\test\\";
             label4.Visible = true;
             DialogResult result = MessageBox.Show("Decrypting files... Please wait while doesn't appears Files decrypted and don't worry if software doesn't answear.", "Press ok to start decryption process.", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (result == DialogResult.Cancel)
@@ -153,30 +153,32 @@ namespace hidden_tear_decrypter
             else
             {
                 decrypted = 0;
-                string fullpath_1 = userDir + path_1 + userName + "\\Links";
-                string fullpath_2 = userDir + path_1 + userName + "\\Contacts";
-                string fullpath_3 = userDir + path_1 + userName + "\\Desktop";
-                string fullpath_4 = userDir + path_1 + userName + "\\Documents";
-                string fullpath_5 = userDir + path_1 + userName + "\\Downloads";
-                string fullpath_6 = userDir + path_1 + userName + "\\Pictures";
-                string fullpath_7 = userDir + path_1 + userName + "\\Music";
-                string fullpath_8 = userDir + path_1 + userName + "\\OneDrive";
-                string fullpath_9 = userDir + path_1 + userName + "\\Saved Games";
-                string fullpath_10 = userDir + path_1 + userName + "\\Favorites";
-                string fullpath_11 = userDir + path_1 + userName + "\\Searches";
-                string fullpath_12 = userDir + path_1 + userName + "\\Videos";
-                DecryptDirectory(fullpath_1);
-                DecryptDirectory(fullpath_2);
-                DecryptDirectory(fullpath_3);
-                DecryptDirectory(fullpath_4);
-                DecryptDirectory(fullpath_5);
-                DecryptDirectory(fullpath_6);
-                DecryptDirectory(fullpath_7);
-                DecryptDirectory(fullpath_8);
-                DecryptDirectory(fullpath_9);
-                DecryptDirectory(fullpath_10);
-                DecryptDirectory(fullpath_11);
-                DecryptDirectory(fullpath_12);
+                string fullpath_0 = userDir + "\\test\\ransomware";
+                //string fullpath_1 = userDir + "\\test\\Links";
+                //string fullpath_2 = userDir + "\\test\\Contacts";
+                //string fullpath_3 = userDir + "\\test\\Desktop";
+                //string fullpath_4 = userDir + "\\test\\Documents";
+                //string fullpath_5 = userDir + "\\test\\Downloads";
+                //string fullpath_6 = userDir + "\\test\\Pictures";
+                //string fullpath_7 = userDir + "\\test\\Music";
+                //string fullpath_8 = userDir + "\\test\\OneDrive";
+                //string fullpath_9 = userDir + "\\test\\Saved Games";
+                //string fullpath_10 = userDir + "\\test\\Favorites";
+                //string fullpath_11 = userDir + "\\test\\Searches";
+                //string fullpath_12 = userDir + "\\test\\Videos";
+                DecryptDirectory(fullpath_0);
+                //DecryptDirectory(fullpath_1);
+                //DecryptDirectory(fullpath_2);
+                //DecryptDirectory(fullpath_3);
+                //DecryptDirectory(fullpath_4);
+                //DecryptDirectory(fullpath_5);
+                //DecryptDirectory(fullpath_6);
+                //DecryptDirectory(fullpath_7);
+                //DecryptDirectory(fullpath_8);
+                //DecryptDirectory(fullpath_9);
+                //DecryptDirectory(fullpath_10);
+                //DecryptDirectory(fullpath_11);
+                //DecryptDirectory(fullpath_12);
 
                 if (decrypted > 0)
                 {
