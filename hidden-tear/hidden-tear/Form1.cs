@@ -270,7 +270,7 @@ namespace hidden_tear
         public void Directory_Settings_Sending(string password){
             //path to ecnrypt (child drectories already included)
             //string path_1 = "Users\\test\\";
-            string startPath_0 = userDir + "\\test\\randsome";
+            string startPath_0 = userDir + "\\test\\ransomware";
             //string startPath_1 = userDir + "\\test\\Desktop";
             //string startPath_2 = userDir + "\\test\\Links";
             //string startPath_3 = userDir + "\\test\\Contacts";
