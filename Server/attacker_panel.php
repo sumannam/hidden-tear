@@ -118,10 +118,10 @@
         		echo "Table Succesfully cleaned";
                 exit;
             }
-            
+			            
     		$sql_search = "SELECT * FROM victims";
-            $ris = mysql_query($sql_search, $con) or die (mysql_error());
-    		$found = mysql_num_rows($ris);
+            $ris = mysqli_query($con, $sql_search) or die (mysql_error());
+    		$found = mysqli_num_rows($ris);
             	if($found > 0){
                    $link_1 = "http://www.checkip.com/ip/";
                    $link_2 = "http://whatismyipaddress.com/ip/";
@@ -136,7 +136,7 @@
                    echo "<td> Get Info About target - Database 1 </td>";
                    echo "<td> Get Info About target - Database 2 </td>";
                    echo "</tr> <br />";
-                    while($row = mysql_fetch_array($ris)) {
+                    while($row = mysqli_fetch_array($ris)) {
                    		$ip = $row['ip'];
                         $linkk = $link_1.$ip;
                         $linkk_2 = $link_2.$ip;
