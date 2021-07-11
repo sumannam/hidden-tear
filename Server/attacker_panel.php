@@ -114,7 +114,7 @@
             
             if (isset($_GET['clean']) == "true" && !empty($_GET['clean'])) {
 				$sql = "TRUNCATE table victims";
-        		$truncate = mysql_query($sql, $con) or die (mysql_error());
+        		$truncate = mysqli_query($con, $sql) or die (mysql_error());
         		echo "Table Succesfully cleaned";
                 exit;
             }
