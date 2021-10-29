@@ -1,0 +1,29 @@
+c:\users\utku\documents\visual studio 2013\Projects\hidden-tear\hidden-tear\bin\Debug\hidden-tear.exe.config
+c:\users\utku\documents\visual studio 2013\Projects\hidden-tear\hidden-tear\bin\Debug\hidden-tear.exe
+c:\users\utku\documents\visual studio 2013\Projects\hidden-tear\hidden-tear\bin\Debug\hidden-tear.pdb
+c:\users\utku\documents\visual studio 2013\Projects\hidden-tear\hidden-tear\obj\Debug\hidden_tear.Form1.resources
+c:\users\utku\documents\visual studio 2013\Projects\hidden-tear\hidden-tear\obj\Debug\hidden_tear.Properties.Resources.resources
+c:\users\utku\documents\visual studio 2013\Projects\hidden-tear\hidden-tear\obj\Debug\hidden-tear.csproj.GenerateResource.Cache
+c:\users\utku\documents\visual studio 2013\Projects\hidden-tear\hidden-tear\obj\Debug\hidden-tear.exe
+c:\users\utku\documents\visual studio 2013\Projects\hidden-tear\hidden-tear\obj\Debug\hidden-tear.pdb
+C:\Users\utku\Documents\Visual Studio 2013\Projects\hidden-tear\hidden-tear\obj\Debug\hidden-tear.csprojResolveAssemblyReference.cache
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\bin\Debug\hidden-tear.exe.config
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\bin\Debug\hidden-tear.exe
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\bin\Debug\hidden-tear.pdb
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\obj\Debug\hidden-tear.csprojAssemblyReference.cache
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\obj\Debug\hidden_tear.Form1.resources
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\obj\Debug\hidden_tear.Properties.Resources.resources
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\obj\Debug\hidden-tear.csproj.GenerateResource.cache
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\obj\Debug\hidden-tear.csproj.CoreCompileInputs.cache
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\obj\Debug\hidden-tear.exe
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear\hidden-tear\obj\Debug\hidden-tear.pdb
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\bin\Debug\hidden-tear.exe.config
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\bin\Debug\hidden-tear.exe
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\bin\Debug\hidden-tear.pdb
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\obj\Debug\hidden-tear.csprojAssemblyReference.cache
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\obj\Debug\hidden_tear.Form1.resources
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\obj\Debug\hidden_tear.Properties.Resources.resources
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\obj\Debug\hidden-tear.csproj.GenerateResource.cache
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\obj\Debug\hidden-tear.csproj.CoreCompileInputs.cache
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\obj\Debug\hidden-tear.exe
+C:\Users\최고의 지식근로자\Documents\git\hidden-tear\hidden-tear-release\hidden-tear\hidden-tear\obj\Debug\hidden-tear.pdb

