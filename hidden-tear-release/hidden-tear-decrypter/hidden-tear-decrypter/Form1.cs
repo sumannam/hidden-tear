@@ -31,7 +31,7 @@ namespace hidden_tear_decrypter
     public partial class Form1 : Form
     {
         string userName = Environment.UserName;
-        string userDir = "C:\\Users\\";
+        string userDir = "C:\\HiddenTear\\";
 
         public Form1()
         {
@@ -121,8 +121,8 @@ namespace hidden_tear_decrypter
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string path = "\\Desktop\\test";
-            string fullpath = userDir + userName + path;
+            string path = "\\ransomware";
+            string fullpath = userDir + path;
             DecryptDirectory(fullpath);
         }
 

